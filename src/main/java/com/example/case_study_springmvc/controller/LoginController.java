@@ -12,4 +12,10 @@ public class LoginController {
         model.addAttribute("user",new User());
         return "login";
     }
+
+    @GetMapping("/signIn")
+    public String signIn(Model model){
+        model.addAttribute("user",new User());
+        return "sign_in";
+    }
 }
